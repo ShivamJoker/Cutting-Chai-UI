@@ -4,42 +4,64 @@
   --main-yellow-color: #f1b64d;
   --btn-grad-start: #ffe8bd;
   --btn-grad-end: #fbcd79;
+  --paragraph-text: #694d2c;
 }
-html,
-body {
-  font-family: "Inter", sans-serif;
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
 }
 
 body {
-  background: url("./chai_bg.png") no-repeat;
-  background-position: center;
-  background-size: cover;
   background-color: var(--main-bg-color);
+  font-family: "Inter", sans-serif;
 }
 
-body > header {
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section.top {
+  background: url("./chai_bg.png") no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+header {
   display: flex;
   margin-top: 1rem;
-  margin-left: 3rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
   display: flex;
-  padding: 0;
-  margin: 0;
-  margin-left: 10rem;
 }
 
 nav li {
   list-style: none;
-  margin-left: 30px;
   cursor: pointer;
+  padding: 0 20px;
+}
+
+header .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.user-profile span {
+  margin-left: 10px;
 }
 
 .logo {
@@ -47,18 +69,19 @@ nav li {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .logo span {
   color: var(--main-yellow-color);
 }
+
 .about {
-  max-width: 300px;
-  margin-left: 200px;
+  max-width: 400px;
 }
+
 .about header h1 {
   color: var(--main-dark-color);
   font-weight: 800;
-  font-size: 5rem;
-  line-height: 100%;
+  font-size: 100px;
 }
 
 .about header span {
@@ -66,8 +89,11 @@ nav li {
 }
 
 .about p {
-  margin-bottom: 3rem;
+  margin: 1rem 0 3rem;
+  color: var(--paragraph-text);
+  line-height: 1.5;
 }
+
 .about button {
   background: linear-gradient(var(--btn-grad-start), var(--btn-grad-end));
   outline: none;
@@ -79,19 +105,18 @@ nav li {
 }
 
 main {
+  margin: 150px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 85%;
 }
 
-.moods {
-  margin-right: 200px;
-}
 .moods li {
   list-style: none;
   display: flex;
   align-items: center;
+  padding: 20px 0;
+  color: var(--paragraph-text);
 }
 
 .moods li span {
