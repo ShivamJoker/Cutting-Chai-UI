@@ -39,6 +39,23 @@ nav li {
   cursor: pointer;
 }
 
+header .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.user-profile span {
+  margin-left: 10px;
+}
+
 .logo {
   color: var(--main-dark-color);
   font-weight: bold;
