@@ -4,6 +4,7 @@
   --main-yellow-color: #f1b64d;
   --btn-grad-start: #ffe8bd;
   --btn-grad-end: #fbcd79;
+  --paragraph-text: #694d2c;
 }
 
 * {
@@ -42,6 +43,7 @@ nav ul {
 nav li {
   list-style: none;
   cursor: pointer;
+  padding: 0 20px;
 }
 
 header .user-profile {
@@ -72,13 +74,13 @@ header img {
 }
 
 .about {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .about header h1 {
   color: var(--main-dark-color);
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 100px;
 }
 
 .about header span {
@@ -87,6 +89,8 @@ header img {
 
 .about p {
   margin-bottom: 3rem;
+  color: var(--paragraph-text);
+  line-height: 1.5;
 }
 .about button {
   background: linear-gradient(var(--btn-grad-start), var(--btn-grad-end));
@@ -99,6 +103,7 @@ header img {
 }
 
 main {
+  margin: 150px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
