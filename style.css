@@ -14,16 +14,21 @@
 
 body {
   background-color: var(--main-bg-color);
-  background-position: center;
-  background-size: cover;
-  background: url("./chai_bg.png") no-repeat;
   font-family: "Inter", sans-serif;
-  height: 100vh;
-  overflow: hidden;
-  width: 100%;
 }
 
-body > header {
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section.top {
+  background: url("./chai_bg.png") no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+header {
   display: flex;
   margin-top: 1rem;
   align-items: center;
