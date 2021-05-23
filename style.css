@@ -5,40 +5,37 @@
   --btn-grad-start: #ffe8bd;
   --btn-grad-end: #fbcd79;
 }
-html,
-body {
-  font-family: "Inter", sans-serif;
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
 }
 
 body {
-  background: url("./chai_bg.png") no-repeat;
+  background-color: var(--main-bg-color);
   background-position: center;
   background-size: cover;
-  background-color: var(--main-bg-color);
+  background: url("./chai_bg.png") no-repeat;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
 }
 
 body > header {
   display: flex;
   margin-top: 1rem;
-  margin-left: 3rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
   display: flex;
-  padding: 0;
-  margin: 0;
-  margin-left: 10rem;
 }
 
 nav li {
   list-style: none;
-  margin-left: 30px;
   cursor: pointer;
 }
 
@@ -47,18 +44,19 @@ nav li {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .logo span {
   color: var(--main-yellow-color);
 }
+
 .about {
   max-width: 300px;
-  margin-left: 200px;
 }
+
 .about header h1 {
   color: var(--main-dark-color);
   font-weight: 800;
   font-size: 5rem;
-  line-height: 100%;
 }
 
 .about header span {
@@ -82,12 +80,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 85%;
 }
 
-.moods {
-  margin-right: 200px;
-}
 .moods li {
   list-style: none;
   display: flex;
