@@ -27,6 +27,7 @@ section.top {
   background: url("./chai_bg.png") no-repeat;
   background-position: center;
   overflow: hidden;
+  width: 100%;
 }
 
 header {
@@ -88,10 +89,11 @@ header img {
 }
 
 .about p {
-  margin-bottom: 3rem;
+  margin: 1rem 0 3rem;
   color: var(--paragraph-text);
   line-height: 1.5;
 }
+
 .about button {
   background: linear-gradient(var(--btn-grad-start), var(--btn-grad-end));
   outline: none;
@@ -113,6 +115,8 @@ main {
   list-style: none;
   display: flex;
   align-items: center;
+  padding: 20px 0;
+  color: var(--paragraph-text);
 }
 
 .moods li span {
