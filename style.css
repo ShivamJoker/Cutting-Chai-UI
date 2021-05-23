@@ -1,0 +1,118 @@
+:root {
+  --main-bg-color: #fff4e8;
+  --main-dark-color: #372005;
+  --main-yellow-color: #f1b64d;
+  --btn-grad-start: #ffe8bd;
+  --btn-grad-end: #fbcd79;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: url("./chai_bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--main-bg-color);
+}
+
+body > header {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 10rem;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.logo {
+  color: var(--main-dark-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.logo span {
+  color: var(--main-yellow-color);
+}
+.about {
+  max-width: 300px;
+  margin-left: 200px;
+}
+.about header h1 {
+  color: var(--main-dark-color);
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+.about header span {
+  color: var(--main-yellow-color);
+}
+
+.about p {
+  margin-bottom: 3rem;
+}
+.about button {
+  background: linear-gradient(var(--btn-grad-start), var(--btn-grad-end));
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85%;
+}
+
+.moods {
+  margin-right: 200px;
+}
+.moods li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.moods li span {
+  position: relative;
+  font-size: 2rem;
+}
+
+.moods li span::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  border-radius: 1rem;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.moods li p {
+  margin-left: 2rem;
+  max-width: 180px;
+}
